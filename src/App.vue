@@ -1,28 +1,45 @@
+import HeaderMap from '@/components/HeaderMap.vue';
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <div id="app">
+      <v-system-bar fixed height="40" color="purple darken-1" lights-out dark>
+        random飲食店
+        <v-spacer></v-spacer>
+        <v-btn plain to="/"><v-icon>mdi-home</v-icon></v-btn>
+        <v-btn plain to="/about"><v-icon>mdi-heart</v-icon></v-btn>
+      </v-system-bar>
+      <div class="router">
+        <router-view />
+      </div>
+    </div>
+  </v-app>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+
+div {
+  &.router {
+    margin-top: 40px;
+  }
 }
 </style>
