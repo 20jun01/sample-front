@@ -2,7 +2,7 @@ import HeaderMap from '@/components/HeaderMap.vue';
 <template>
   <v-app>
     <div id="app">
-      <v-system-bar fixed height="40" color="purple darken-1" lights-out dark>
+      <v-system-bar fixed height="40" color="green lighten-1" lights-out dark>
         random飲食店
         <v-spacer></v-spacer>
         <v-btn plain to="/"><v-icon>mdi-home</v-icon></v-btn>
