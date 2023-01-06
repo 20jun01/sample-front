@@ -7,6 +7,7 @@ import HeaderMap from '@/components/HeaderMap.vue';
         <v-spacer></v-spacer>
         <v-btn plain to="/"><v-icon>mdi-home</v-icon></v-btn>
         <v-btn plain to="/about"><v-icon>mdi-heart</v-icon></v-btn>
+        <v-btn plain to="/result"><v-icon>mdi-map-marker</v-icon></v-btn>
       </v-system-bar>
       <div class="router">
         <router-view />
