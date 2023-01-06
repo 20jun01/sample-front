@@ -13,9 +13,9 @@
         <template v-slot:label>
           <div>Your favorite <strong>genre of food</strong></div>
         </template>
-        <v-radio label="ラーメン" value="ramen"></v-radio>
-        <v-radio label="カレー" value="curry"></v-radio>
-        <v-radio label="その他" value="other"></v-radio>
+        <v-radio label="ラーメン" value="ラーメン"></v-radio>
+        <v-radio label="カレー" value="カレー"></v-radio>
+        <v-radio label="その他" value=""></v-radio>
       </v-radio-group>
       <v-btn
       class="mx-2"
