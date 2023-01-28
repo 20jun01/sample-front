@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app id="unscrollable">
         <v-card :href=url><v-card-title>お前らはここに行け</v-card-title>
             <v-card-subtitle>{{ name }}</v-card-subtitle>
             <iframe :src=src allowfullscreen loading="lazy"></iframe>

@@ -43,4 +43,11 @@ div {
     margin-top: 40px;
   }
 }
+
+@media (min-height: 700px) {
+  #unscrollable {
+    position: fixed;
+    width: 100%;
+  }
+}
 </style>

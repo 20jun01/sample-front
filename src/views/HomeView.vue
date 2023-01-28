@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id ="unscrollable">
     <div v-if="loading">
       <v-progress-linear indeterminate color="teal"></v-progress-linear>
     </div>

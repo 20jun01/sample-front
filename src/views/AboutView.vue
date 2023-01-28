@@ -1,5 +1,5 @@
 <template>
-  <div class="TextAnime1">
+  <div id=unscrollable class="TextAnime1">
     <p v-for="(t, index) in text" :key="index" class="item" :style="{ animationDelay: index * 100 + 'ms' }" v-text="t"
       colors="purple darken-1"></p>
   </div>
